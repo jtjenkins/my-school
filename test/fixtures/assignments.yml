@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  title: 
+  details: 
+  assigned_date: 
+  due_date: 2013-04-12
+
+two:
+  title: 
+  details: 
+  assigned_date: 
+  due_date: 2013-04-12

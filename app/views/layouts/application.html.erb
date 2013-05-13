@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title></title>
+  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+  <div class="navbar">
+    <div class="navbar-inner">
+      <a class="brand" href="/">School Plan</a>
+      <ul class="nav">
+        <li class="divider-vertical"></li>
+        <li id="home"><a href="/">Home</a></li>
+        <li class="divider-vertical"></li>
+        <li id="about"><a href="about">About</a></li>
+        <li class="divider-vertical"></li>
+        <li id="pricing"><a href="pricing">Pricing</a></li>
+        <li class="divider-vertical"></li>
+      </ul>
+      <ul class="nav pull-right">
+        <li class="divider-vertical"></li>
+        <li id="signup"><a href="signup">Sign Up</a></li>
+        <li class="divider-vertical"></li>
+        <li id="login"><a href="login">Log In</a></li>
+        <li class="divider-vertical"></li>
+      </ul>
+    </div>
+  </div>
+<div class="offset1 span10">
+  <%= yield %>
+</div>
+</body>
+</html>
