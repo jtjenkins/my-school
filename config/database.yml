@@ -6,6 +6,8 @@
 development:
   adapter: postgresql
   database: school-planner-dev
+  username: postgres
+  password: postgres
   host: localhost
   pool: 20
   encoding: unicode

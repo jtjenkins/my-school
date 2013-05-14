@@ -29,7 +29,7 @@ My School is currently in active development for an inital feature set to allow 
 My School is released under the MIT license.
 
 ##Contributing to My School
-To contribue to My School, clone the repo, and set up your development environment for a Ruby on Rails stack with a MongoDB database (Vagrant configuration: COMING SOON)
+To contribue to My School, clone the repo, and set up your development environment for a Ruby on Rails stack with a PostgreSQL database (Vagrant configuration: COMING SOON)
 
 Write tests for all your changes and makes sure all commits pass automated testing.
 
