@@ -1,11 +1,5 @@
 SchoolPlanner::Application.routes.draw do
 
-  get "about" => "landing#about"
-
-  get "pricing" => "landing#pricing"
-
-  #get "signup" => "landing#signup"
-
   devise_for :users
 
   root :to => "landing#index"
