@@ -1,7 +1,11 @@
 function CalendarViewModel() {
   var self = this;
-  self.name = "Calendar";
-  self.events = ko.observableArray([
+  self.events = ko.observable();
+  $(document).ready(function(){
+  $('#calendarUI').fullCalendar({
+        eventSources: [
+        {
+          events: [
               {
                 title: "English - Test Event",
                 start: "2013-05-06T03:15:30Z",
@@ -42,18 +46,13 @@ function CalendarViewModel() {
                 color: "red",
                 textColor: "white"
               }
-            ]);
-
-  $(document).ready(function(){
-    $('#calendarUI').fullCalendar({
-      eventSources: [
-      {
-        events: self.events()
-      }]
-    });
-    console.log("calendar loaded");
-  });
+            ]
+        }]
+      });
+  $('#calendarUI').fullCalendar('option', 'height', 800);
+  $('#calendarUI').fullCalendar('render');
+      console.log("calendar loaded");
+});
 }
-
 
 ko.applyBindings(new CalendarViewModel(), $("#calendar")[0]);
