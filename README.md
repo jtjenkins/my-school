@@ -35,6 +35,16 @@ Write tests for all your changes and makes sure all commits pass automated testi
 
 Push your changes to your own fork then do a pull request to the main repo.
 
+##Credits
+My School is built on the backs of giants. We use the following open source libraries and tools:
+
+* Ruby
+* Rails
+* PostgreSQL
+* KnockoutJS
+* SammyJS
+
+
 ##MIT License
 Permission is hereby granted, free of charge, to any person obtaining
 a copy of this software and associated documentation files (the

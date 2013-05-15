@@ -10,10 +10,10 @@
   <link rel="stylesheet" type="text/css" href="css/datepicker.css"> 
 </head>
 <body>
-  <div class="navbar">
+  <div class="navbar" id="header">
     <div class="navbar-inner">
       <ul class="nav">
-        <li><a href="#/overview">Overview</a></li>
+        <li><a href="">Overview</a></li>
         <li><a href="#/classes">Classes</a></li>
         <li><a href="#/rosters">Rosters</a></li>
         <li><a href="#/assignments">Assignments</a></li>
@@ -21,21 +21,37 @@
         <li><a href="#/messages">Messages</a></li>
       </ul>
       <ul class="nav pull-right">
-        <li><a href="#/signin">Sign In</a></li>
+        <li data-bind="html: name"><a href="#/signin">Sign In</a></li>
       </ul>
     </div>
   </div>
   <div class="container-fluid">
     <div class="span10 offset1">
-      <div></div>
+      <div id="overview" style="display: none;" data-bind="text: name"></div>
+      <div id="classroom" style="display: none;" data-bind="text: name"></div>
+      <div id="roster" style="display: none;" data-bind="text: name"></div>
+      <div id="assignment" style="display: none;" data-bind="text: name"></div>
+      <div id="calendar" style="display: none;" data-bind="text: name"></div>
+      <div id="message" style="display: none;" data-bind="text: name"></div>
+      <div id="account" style="display: none;" data-bind="text: name"></div>
     </div>
   </div>
 
-  <script src="js/jquery.min.js"></script>
-  <script type="text/javascript" src="js/bootstrap-datepicker.js"></script>
-  <script type='text/javascript' src='js/fullcalendar.min.js'></script>
-  <script src="js/bootstrap.js"></script>
-  <script src="js/knockout.js"></script>
-  <script src="js/app.js"></script>
+  <script src="js/lib/jquery.min.js"></script>
+  <script type="text/javascript" src="js/lib/bootstrap-datepicker.js"></script>
+  <script type='text/javascript' src='js/lib/fullcalendar.min.js'></script>
+  <script src="js/lib/bootstrap.js"></script>
+  <script src="js/lib/knockout.js"></script>
+  <script src="js/lib/sammy.js"></script>
+  <script src="js/models/models.js"></script>
+  <script src="js/viewmodels/header.js"></script>
+  <script src="js/viewmodels/overview.js"></script>
+  <script src="js/viewmodels/classroom.js"></script>
+  <script src="js/viewmodels/roster.js"></script>
+  <script src="js/viewmodels/assignment.js"></script>
+  <script src="js/viewmodels/calendar.js"></script>
+  <script src="js/viewmodels/message.js"></script>
+  <script src="js/viewmodels/account.js"></script>
+  <script src="js/routes.js"></script>
 </body>
 </html>
