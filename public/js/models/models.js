@@ -47,3 +47,10 @@ function User(firstName, middleName, lastName, grade, birthMonth, birthDay, birt
   self.email = email;
   self.token = token;
 }
+
+function Models(){
+  var self = this;
+  self.user = ko.observable();
+  self.school = ko.observable();
+  self.classrooms = ko.observableArray([]);
+}
