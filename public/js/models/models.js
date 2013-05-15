@@ -54,3 +54,5 @@ function Models(){
   self.school = ko.observable();
   self.classrooms = ko.observableArray([]);
 }
+
+var models = new Models();
